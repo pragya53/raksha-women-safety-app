@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+   
+    <title>Womens's Safety</title>
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <span class="brand">
+                <b>Women's Safety</b>                
+            </span>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#contacts">Profile</a>
+                </li>
+                <li>
+                    <a href="/logout"><button class="logout-btn">Logout</button></a>
+                </li>
+                <li>
+                    <a href="/sendsms"><button class="nav-btn" style="background-color: red;">HELP</button></a>                    
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="home">
+        <div class="container">
+            <div class="image-container">
+                <image src="{{ url_for('static', filename='images.png') }}" alt="Raksha" class="img">
+            </div>
+            <div class="desc-container">
+                <h1><b>RAKSHA</b></h1>
+                <p class="p">Stay safe!</p>
+                <p class="p">Stay alert!</p>              
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="location">
+        <div class="loc-container">
+            <div class="desc-container">
+                <h1><b>Safest Route</b></h1>
+                <a href="#"><button class="bttn">GET</button></a>             
+            </div>
+
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='Path.jpg') }}" alt="path" class="img">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="details">
+        <div class="grid-container3">
+            <div class="contact-form" data-aos="fade-up" method="post" action="/sendsms">
+                <div class="form-text">
+                    <h2>Drop in the details below!</h2>
+                   
+                </div>
+                <input type="text" placeholder="Vehicle number" class="form-input">
+                <input type="text" placeholder="Vehicle's name" class="form-input">
+                <input type="text" placeholder="Driver's name" class="form-input">
+                <a href="/sendsms"><button class="bttn">Send</button></a>
+            </div>
+           
+            <div class="form-text">
+                <h1 style="padding-left: 200px;color:#535657">Send details to your trusted contacts.</h1>
+               
+            </div>
+        </div>
+    </section>
+
+    <section id="self-defence">
+        <div class="defence-container">          
+
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='selfdefense.jpg') }}" alt="self-defence" class="img">
+            </div>
+            <div class="desc-container">
+                <h1><b>Self Defense</b></h1>
+                <p class="p">Fight Back!</p> 
+                <a href="{{url_for('static',filename='selfdefense.html')}}"><button class="bttn">LEARN</button></a>             
+            </div>
+        </div>
+
+    </section>
+    <section id="helpline">
+        <h1 class="desc-container"><b>Helpline numbers</b></h1>
+
+    <table id="t01">
+    <tr>
+        <th>Helpline</th>
+        <th>Numbers</th> 
+    </tr>
+    <tr>
+        <td>Women Helpline Domestic Abuse</td>
+        <td>181</td>
+    
+    </tr>
+    <tr>
+        <td>Police</td>
+        <td>100</td>    
+    </tr>
+    <tr>
+        <td>National Commison For Women (NCW)</td>
+        <td>011-26942369, 26944754</td>    
+    </tr>
+    <tr>
+        <td>Student / Child Helpline</td>
+        <td>1098</td>    
+    </tr>
+    <tr>
+        <td>National Human Right Commision</td>
+        <td>011-23385368/9810298900</td>    
+    </tr>
+    </table>
+    </section>
+
+    <section>
+        <footer>
+            <div class="footer-text">
+                <h3>RAKSHA | Designed by Pragya Shashwati</h3>
+            </div>
+        </footer>
+    </section>
+
+
+</body>
+</html>
