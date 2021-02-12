@@ -1,0 +1,274 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color:;
+    font-family: 'Montserrat', sans-serif;
+    color: #232d2f;
+}
+.brand {
+    font-family: 'Alex Brush', cursive;
+    font-size: xx-large;
+    color: white;
+}
+.nav-container {
+    position: fixed;
+    width: 100%;
+    background-color: #FF1493;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    font-size: 1.5rem;
+}
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding: 0 2rem;
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    
+    border-bottom: 3px solid #fa788d;
+    color: #fa788d;
+    font-weight: bold;
+}
+.logout-btn {
+    background-color: #FF1493;
+    border-color: white;
+    border-radius: 5%;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+}
+
+.nav-btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FF1493;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    height:40px;
+    width:150px;
+}
+.nav-btn:focus {
+    border: none;
+    border-radius: 5px;
+    background-color: #54dcf2;
+    
+    outline: none;
+}
+.nav-btn:hover {
+    border: none;
+    background-color: #f071a2;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20%;
+    /* padding: 0 2rem; */
+    height: 110vh;
+
+}
+.img {
+    height: 500px;
+    width: 500px;
+}
+.image-container, .desc-container {
+    text-align: center;
+}
+.desc-container {
+    margin-top: 2rem;
+}
+h1 {
+    
+    color: #FF1493;
+    font-weight: 500;
+    font-size: 4rem;
+}
+h2 {
+    opacity: 0.75;
+}
+
+.p {
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 0.7;
+}
+.loc-container, .defence-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    /* padding: 0 2rem; */
+    height: 90vh;
+
+}
+
+.bttn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FF1493;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 2rem;
+    font-weight: 700;
+    font-size: x-large;
+    color: white;
+    height:60px;
+    width:150px;
+}
+.bttn:focus {
+    border: none;
+    border-radius: 5px;
+    background-color: #54dcf2;
+    
+    outline: none;
+}
+.bttn:hover {
+    border: none;
+    background-color: #f071a2;
+}
+
+
+
+
+.grid-container2 {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    padding: 10vh 10vw 10vh 10vw;
+    grid-gap: 30px;
+}
+.tip1, .tip2, .tip3, .tip4, .tip5, .tip6 {
+    padding: 2rem;
+    background-color: #a59ba0;
+    border-radius: 10px;
+    
+}
+
+.tip1, .tip2,.tip3{
+    grid-row: 1/2;
+}
+
+
+.a, .b,.c, .d, .e, .f {
+    width: 100%;
+    height: 190px;
+    object-fit: cover; 
+}
+a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.75;
+}
+
+/*details*/
+.grid-container3 {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px;
+}
+.contact-form {
+    background-color: #ED91A7;
+    border-radius: 18px;
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 350px;
+}
+
+.form-text h2{
+    margin: 1rem 0;
+    padding: 0;
+    font-size: 18pt;
+    font-weight: 500;
+    color: black;
+}
+
+.form-input {
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    text-align: left;
+    width: 90%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.form-input::placeholder {
+    color: black;
+}
+.form-input:focus {
+    background-color:#6A6060;
+    color: white;
+    outline: none;
+}
+
+
+
+
+#helpline {
+    padding: 0 10%;
+}
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+   background-color: #fff;
+}
+#t01 th {
+    background-color:  #FF1493;
+    color: white;
+}
+footer {
+    background-color: #FF1493;
+    position: absolute;
+    width: 100%;
+    height:60px;
+    margin-top: 5rem;
+    
+}
+.footer {
+    margin: 2rem 1rem;
+    text-align: center;
+}
+.footer-text h3 {
+    color:white;
+    opacity: 1;
+    text-align: center;
+    margin: 1rem;
+    font-size: 11pt;
+}
