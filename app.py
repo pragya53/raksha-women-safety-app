@@ -9,9 +9,9 @@ app.secret_key=os.urandom(24)
 
 conn = mysql.connector.connect(
     host="sql12.freesqldatabase.com",
-    user="sql12392241",
-    password="dZIlYK5vN6",
-    database="sql12392241"
+    user="",
+    password="",
+    database=""
 )
 
 cursor=conn.cursor()
