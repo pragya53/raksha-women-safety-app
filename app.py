@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,redirect,session
 import mysql.connector
 import os
-import sms
+import sms, directions
 
 app = Flask(__name__)
 
@@ -67,7 +67,7 @@ def logout():
     session.pop('userid')
     return redirect('/')
 
-@app.route('/sendsms')
+@app.route('/sendsms', methods=['POST'])
 def sos():
     if 'userid' in session:
         
@@ -88,6 +88,17 @@ def sos():
 
     else:
         print('failed')
+        
+@app.route('/dir')
+def route():
+    return render_template('route.html')
 
+@app.route('/findroute', methods=['POST'])
+def get_directions():
+    source = request.form.get('from')
+    destination = request.form.get('to')
+
+    directions.find_route(source,destination)
+    
 if __name__=="__main__":
     app.run(debug=True)
